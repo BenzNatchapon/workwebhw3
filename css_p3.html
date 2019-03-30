@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        table{
+            width:100%;
+            text-align: center;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+        td{
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body style="text-align: center;padding: 20px;background-image:url(picture/bg4.jpeg)">
+    <button type="button" class="btn btn-primary btn-lg btn-block"><a href="index.html" style="color:azure; text-decoration:none"><b>Home</b></a></button>
+    <button type="button" class="btn btn-secondary btn-lg btn-block"><a href="css_p2.html" style="color:azure; text-decoration:none"><b>Gallery</b></a></button>
+    <button type="button" class="btn btn-success btn-lg btn-block"><a href="css_p3.html" style="color:azure; text-decoration:none"><b>Contact</b></a></button>
+    <br>
+
+    
+            <div class="jumbotron" style="background-image:url(picture/bg1.jpeg)">
+                <table>
+                    <tr>
+                        <td>
+                                <p class="lead"><h2>Natchapon Leelapiromkul</h2></p>
+                                <hr class="my-4">
+                                <font size="4"><b>
+                                <p>College student</p>
+                                <p><a href="mailto:natchapon_l@cmu.ac.th">natchapon_l@cmu.ac.th</a></p>
+                                <p>(+66)93 136 0180</p>
+                                </b></font>
+                        </td>
+                        <td style="padding-left: 50px">
+                                <img src="picture/pic.jpg" alt="my pic" style="max-width: 250px;" class="rounded-circle">
+                        </td>
+                    </tr>
+                </table>
+                
+            </div>
+            <section class="container">
+            <form action="" id="my-form">
+            <table class="table table-hover">
+                    <tbody>
+                      <div class="msg"></div>
+                      <tr class="table-primary">
+                        <th scope="row">Subject :</th>
+                        <form>
+                            <td><input type="text" name="Subject" id="Subject"></td>
+                        </form>
+                        
+                      </tr>
+                      <tr class="table-secondary">
+                        <th scope="row">Message :</th>
+                        <form>
+                            <td><textarea name="Message" id="Message" cols="23" rows="2"></textarea></td>
+                        </form>
+                        
+                      </tr>
+                      <tr class="table-success">
+                        <th scope="row">Name :</th>
+                        <form>
+                            <td><input type="text" name="Name" id="Name" ></td>
+                        </form>
+                        
+                      </tr>
+                      <tr class="table-danger">
+                        <th scope="row">Gender :</th>
+                        <form>
+                            <td>
+                            <input type="radio" name="gender" value="male" id="Male"> Male
+                            <input type="radio" name="gender" value="female" id="Female"> Female
+                            </td>
+                        </form> 
+                        
+                      </tr>
+                      <tr class="table-warning">
+                        <th scope="row">Phone :</th>
+                        <form>
+                            <td><input type="text" name="Phone" id="Phone"></td>
+                        </form>
+                        
+                      </tr>
+                      <tr class="table-info">
+                        <th scope="row">Email :</th>
+                        <form>
+                            <td><input type="text" name="Email" id="Email"></td>
+                        </form>
+                        
+                      </tr>
+                      <tr>
+                        <th scope="row"></th>
+                        <td><input type="submit" value="Submit" class="btn btn-success btn-lg"></td>
+                        
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+                </form>
+                  <ul id="users"></ul>  
+                </section>
+                  <script src="main.js"></script>
+</body>
+</html>
